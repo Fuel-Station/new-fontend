@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
 
 class splashScreen extends StatefulWidget {
-  static const routeName = "/home";
+  static const routeName = "/splashScreen";
   @override
   State<StatefulWidget> createState() => InitState();
 }
