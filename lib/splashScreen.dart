@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/material.stlf';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
+import 'package:fuel_app/screens/signup_screens.dart';
 
 class splashScreen extends StatefulWidget {
+  static const routeName = "/splashScreen";
   @override
   State<StatefulWidget> createState() => InitState();
 }
@@ -31,7 +33,27 @@ class InitState extends State<splashScreen> {
             child: Container(
               child: Image.asset('images/fuel.png'),
             ),
-          )
+          ),
+          Expanded(
+              child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    margin: const EdgeInsets.all(100),
+                    height: 50,
+                    width: 150,
+                    child: ElevatedButton(
+                      onPressed: (() {
+                        Navigator.of(context).pushNamed(SignupScreen.routeName);
+                      }),
+                      child: Text(
+                        "Start",
+                        style: TextStyle(fontSize: 25, color: Colors.black),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                          primary: Color.fromARGB(255, 198, 231, 9),
+                          shape: StadiumBorder()),
+                    ),
+                  )))
         ],
       ),
     );
