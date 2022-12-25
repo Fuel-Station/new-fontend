@@ -3,6 +3,7 @@ import 'package:fuel_app/custom_textField.dart';
 import 'package:fuel_app/services/auth_services.dart';
 
 class SignupScreen extends StatefulWidget {
+  static const routeName = '/signup_screens';
   const SignupScreen({Key? key}) : super(key: key);
 
   @override
