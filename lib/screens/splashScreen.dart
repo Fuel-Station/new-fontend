@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/src/foundation/key.dart';
 import 'package:fuel_app/screens/signup_screens.dart';
 
+import 'Login_select_Page.dart';
+
 class splashScreen extends StatefulWidget {
   static const routeName = "/splashScreen";
   @override
@@ -43,7 +45,7 @@ class InitState extends State<splashScreen> {
                     width: 150,
                     child: ElevatedButton(
                       onPressed: (() {
-                        Navigator.of(context).pushNamed(SignupScreen.routeName);
+                        Navigator.of(context).pushNamed(LoginTypeSelect.routeName);
                       }),
                       child: Text(
                         "Start",

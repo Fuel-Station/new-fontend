@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowMaterialGrid: false,
       // home: SignupScreen(),
-      initialRoute: SignupScreen.routeName,
-      // initialRoute: splashScreen.routeName,
+      // initialRoute: SignupScreen.routeName,
+      initialRoute: splashScreen.routeName,
       routes: routes,
     );
   }
