@@ -7,7 +7,7 @@ import 'package:fuel_app/utils/utils.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:fuel_app/splashScreen.dart';
+import 'package:fuel_app/screens/splashScreen.dart';
 
 import '../utils/constants.dart';
 
