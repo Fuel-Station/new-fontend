@@ -5,5 +5,5 @@ import 'package:fuel_app/splashScreen.dart';
 
 final Map<String, WidgetBuilder> routes = {
   splashScreen.routeName: (_) => splashScreen(),
-  SignupScreen.routeName: (_) => SignupScreen()
+  SignupScreen.routeName: (_) => const SignupScreen()
 };
