@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fuel_app/providers/user_providers.dart';
 import 'package:fuel_app/route.dart';
 import 'package:fuel_app/screens/signup_screens.dart';
+// import 'package:fuel_app/screens/signup_screens.dart';
 import 'package:fuel_app/splashScreen.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowMaterialGrid: false,
       // home: SignupScreen(),
-      initialRoute: splashScreen.routeName,
+      initialRoute: SignupScreen.routeName,
+      // initialRoute: splashScreen.routeName,
       routes: routes,
     );
   }
