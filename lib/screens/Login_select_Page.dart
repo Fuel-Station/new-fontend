@@ -16,7 +16,7 @@ class _LoginTypeSelectState extends State<LoginTypeSelect> {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(title: Text("")),
+      // appBar: AppBar(title: Text("")),
       body: Container(
         padding: EdgeInsets.all(36),
         child: Column(
