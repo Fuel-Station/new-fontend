@@ -26,10 +26,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowMaterialGrid: false,
-      // home: SignupScreen(),
+      home: SignupScreen(),
       // initialRoute: SignupScreen.routeName,
-      initialRoute: splashScreen.routeName,
-      routes: routes,
+      // initialRoute: splashScreen.routeName,
+      // routes: routes,
     );
   }
 }
