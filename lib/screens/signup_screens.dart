@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fuel_app/custom_textField.dart';
 import 'package:fuel_app/services/auth_services.dart';
 
+import 'login_screen.dart';
+
 class SignupScreen extends StatefulWidget {
   static const routeName = '/signup_screens';
   const SignupScreen({Key? key}) : super(key: key);
@@ -76,18 +78,18 @@ class _SignupScreenState extends State<SignupScreen> {
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
           ),
-          // SizedBox(height: MediaQuery.of(context).size.height * 0.1),
-          // TextButton(
-          //   onPressed: () {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //         builder: (context) => const LoginScreen(),
-          //       ),
-          //     );
-          //   },
-          //   child: const Text('Login User?'),
-          // ),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.1),
+          TextButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const LoginScreen(),
+                ),
+              );
+            },
+            child: const Text('Login User?'),
+          ),
         ],
       ),
     );

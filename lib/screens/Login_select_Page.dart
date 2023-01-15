@@ -27,7 +27,7 @@ class _LoginTypeSelectState extends State<LoginTypeSelect> {
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             Image.asset(
-              'images/LoginArt1.jpg',
+              'images/flame-biofuel.png',
             ),
             Column(
               children: [
@@ -47,8 +47,7 @@ class _LoginTypeSelectState extends State<LoginTypeSelect> {
                       style: OutlinedButton.styleFrom(
                           shape: RoundedRectangleBorder(),
                           foregroundColor: Color.fromRGBO(10, 10, 10, 1),
-                          side:
-                              BorderSide(color: Color.fromARGB(255, 247, 7, 7)),
+                          side: BorderSide(color: Colors.blueAccent),
                           padding: EdgeInsets.symmetric(vertical: 12)),
                       child: Text(
                         "Fuel Station",
@@ -67,9 +66,8 @@ class _LoginTypeSelectState extends State<LoginTypeSelect> {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(),
                           foregroundColor: Color.fromRGBO(10, 10, 10, 1),
-                          backgroundColor: Color.fromARGB(255, 230, 11, 11),
-                          side:
-                              BorderSide(color: Color.fromARGB(255, 247, 7, 7)),
+                          backgroundColor: Colors.blueAccent,
+                          side: BorderSide(color: Colors.blueAccent),
                           padding: EdgeInsets.symmetric(vertical: 12)),
                       child: Text(
                         "Customer",

@@ -24,16 +24,16 @@ class InitState extends State<splashScreen> {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
-                color: new Color(0xfff5591F),
-                gradient: LinearGradient(colors: [
-                  (new Color(0xffF5591F)),
-                  (new Color(0xffF2861E))
-                ])),
-          ),
+              // decoration: BoxDecoration(
+              //     color: Color(0xffD7E9B9),
+              //     gradient: LinearGradient(colors: [
+              //       (new Color(0xffFFFBAC)),
+              //       (new Color(0xffFAAB78))
+              //     ])),
+              ),
           Center(
             child: Container(
-              child: Image.asset('images/fuel.png'),
+              child: Image.asset('images/logonew.png'),
             ),
           ),
           Expanded(
@@ -45,15 +45,15 @@ class InitState extends State<splashScreen> {
                     width: 150,
                     child: ElevatedButton(
                       onPressed: (() {
-                        Navigator.of(context).pushNamed(LoginTypeSelect.routeName);
+                        Navigator.of(context)
+                            .pushNamed(LoginTypeSelect.routeName);
                       }),
                       child: Text(
                         "Start",
                         style: TextStyle(fontSize: 25, color: Colors.black),
                       ),
                       style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 198, 231, 9),
-                          shape: StadiumBorder()),
+                          primary: Colors.blueAccent, shape: StadiumBorder()),
                     ),
                   )))
         ],

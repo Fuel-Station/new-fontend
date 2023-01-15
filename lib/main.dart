@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
       debugShowMaterialGrid: false,
       home: InputFuel(),
       // initialRoute: SignupScreen.routeName,
-      // initialRoute: splashScreen.routeName,
-      // routes: routes,
+         initialRoute: splashScreen.routeName,
+      routes: routes,
     );
   }
 }
